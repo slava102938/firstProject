@@ -1,0 +1,101 @@
+@font-face {
+	font-family: "WebFont";
+	src: url(../font.ttf);
+}
+body, input, select, button {
+	font-family: "WebFont", Arial, sans-serif;
+}
+body {
+	background-image: url("../image/index.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: background-image 1s linear;
+}
+#form {
+	width: 600px;
+	margin: auto;
+	text-align: center;
+}
+fieldset {
+	border-radius: 40px;
+}
+legend {
+	text-align: center;
+}
+
+span{
+	display: none;
+	position: absolute;
+	bottom: 40px;
+	right: 0px;
+	border: 2px dotted white;
+	background-color: black;
+	border-radius: 10px;
+	padding: 5px;
+}
+#form div{
+	position: relative;
+	width: 250px;
+	margin: 0px auto;
+}
+#form div:hover span{
+	display: inline;
+}
+
+input, select, button {
+	margin: 1px;
+	box-sizing: border-box;
+	border-width: 1.5px;
+	border-radius: 10px;
+	transition: width 0.5s ease;
+	outline: none;
+	background-color: black;
+	padding: 5px;
+}
+[data-form_ready="0"] {
+	border-color: orange;
+	color: orange;
+}
+[data-form_ready="1"] {
+	border-color: green;
+	color: green;
+}
+[data-form_ready="-1"] {
+	border-color: red;
+	color: red;
+}
+[placeholder] {
+	width: 180px;
+}
+[placeholder]:focus {
+	width: 250px;
+}
+[type="reset"] {
+	border-color: red;
+	color: red;
+}
+[type="submit"] {
+	border-color: red;
+}
+.formRegistr {
+	border-color: orange;
+	color: orange;
+}
+
+.formPassword {
+	border-color: #C50080;
+	color: #C50080;
+}
+.formPassword input, .formPassword button {
+	border-color: #C50080;
+	color: #C50080;
+}
+
+a {
+	text-decoration: none;
+	color: orange;
+	font-weight: bolder;
+}
+a:hover {
+	text-decoration: underline;
+}

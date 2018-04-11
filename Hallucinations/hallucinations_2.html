@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hallucinations 2</title>
+	<style>
+		body {
+			margin: 0px auto;
+			background-color: black;
+			color: white;
+			-webkit-user-select: none;
+		    -moz-user-select: none;
+			-ms-user-select: none;
+		}
+
+		div {
+			color: black;
+			position: absolute;
+			text-align: center;
+			right: 150px;
+			left: 150px;
+			height: 400px;
+			top: 120px;
+			border: 1px solid black;
+			background-color: white;
+			border-radius: 50px;
+		}
+		p {
+			padding: 0px 5px 0px 5px
+		}
+		button {
+			width: 250px;
+			border-radius: 5px;
+			border: 5px double black;
+			cursor: pointer;
+			transition: all 0.5s ease;
+		}
+		button:hover {
+			border: 2px solid white;
+			background-color: black;
+			color: white;
+			transform: scale(1.5);
+		}
+		select {
+			width: 250px;
+			color: white;
+			background-color: black;
+			height: 25px;
+			border-radius: 5px;
+		}
+
+		a {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<b>
+	<div><h1>Давай сыграем с тобой в одну &#9672;
+		<a onclick="location.href='hallucinations.html'" onmouseover="this.innerHTML='лёгкую'" onmouseout="this.innerHTML='сложную'">сложную</a> &#9672; игру...</h1><br>
+		<p>Добро пожаловать, человечешка, в мою игру, развивающию головную и глазную боль... точнее, контцентрацию и внимание. В вашем распоряжении будет 616 клеток решивших, что они на дескотеке, и хотевших с вами поиграть. Выбирайте уровень сложности, читайте правила и готовтесь к самому сложному...</p>
+		<select>
+			<option>В разработке...</option>
+			<option>В разработке...</option>
+			<option>В разработке...</option>
+		</select><br><br>
+		<button onclick="start()" onmouseover="this.innerHTML='Это ещё не работает'" onmouseout="this.innerHTML='Самая страшная кнопка'">Самая страшная кнопка</button><br>
+	</div>
+</b>
+</body>
+</html>

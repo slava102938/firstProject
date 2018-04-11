@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "WebFont";
+	src: url(../font.ttf);
+}
+body, input, select {
+	font-family: "WebFont", Arial, sans-serif;
+}
+body {
+	background-color: #fdfc4f;
+	margin: 0px;
+	padding: 55px 10px 0px 10px;
+	background-image: url("../image/general.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+#parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+#parent a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+div.nav {
+	box-sizing: border-box;
+	height: 50px;
+	padding: 0px 10px;
+	line-height: 50px;
+	color: #FF4900;
+	border: 2px outset #FF4900;
+	background-color: black;
+	border-radius: 0px 0px 10px 10px;
+}
+
+#parent [type="submit"] {
+	background-color: black;
+	color: #FF4900;
+	border: 0px;
+	cursor: pointer;
+	font-size: 15px;
+}

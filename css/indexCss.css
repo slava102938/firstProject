@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "WebFont";
+	src: url(../font.ttf);
+}
+body, input {
+	font-family: "WebFont", Arial, sans-serif;
+}
+
+@keyframes colors {
+	25% {
+		color: green;
+	}
+	50% {
+		color: blue;
+	}
+	75% {
+		color: red;
+	}
+	100% {
+		color: yellow;
+	}
+}
+
+body {
+	background-image: url("../image/index.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+[onclick="showNote()"] {
+	cursor: help;
+	color: yellow;
+	animation: colors 4s linear infinite;
+}
+.note {
+	color: red;
+}
+
+#form {
+	width: 600px;
+	margin: auto;
+}
+fieldset {
+	border-radius: 40px;
+	border-color: #FF4900;
+	color: #FF4900;
+}
+legend {
+	text-align: center;
+}
+input{
+	margin: 1px;
+	box-sizing: border-box;
+	border-width: 1.5px;
+	border-radius: 10px;
+	outline: none;
+	border-color: #FF4900;
+	color: #FF4900;
+	background-color: black;
+	padding: 5px;
+}
+[placeholder] {
+	width: 180px;
+	transition: width 0.5s ease;
+}
+[placeholder]:focus {
+	width: 250px;
+}
+.email {
+	font-size: 12.5px;
+	color: white;
+}
+[href="registration.php"] {
+	text-decoration: none;
+	color: orange;
+	font-weight: bolder;
+	margin-right: 20px;
+}
+[href="recovery.php"] {
+	text-decoration: none;
+	color: #FFBA00;
+	font-weight: bold;
+}
+span a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}

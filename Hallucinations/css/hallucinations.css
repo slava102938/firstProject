@@ -1,0 +1,166 @@
+@keyframes animEase1 {
+	0% {background-color: red; color: #009999;}
+	25% {background-color: yellow; color: #A600A6;}
+	50% {background-color: green; color: #FF9200;}
+	75% {background-color: blue; color: #FFFF00;}
+	100% {background-color: red; color: #009999;}
+}
+@keyframes animEase2 {
+	0% {background-color: blue; color: #FFFF00;}
+	25% {background-color: red; color: #009999;}
+	50% {background-color: yellow; color: #A600A6;}
+	75% {background-color: green; color: #FF9200;}
+	100% {background-color: blue; color: #FFFF00;}
+}
+@keyframes animEase3 {
+	0% {background-color: green; color: #FF9200;}
+	25% {background-color: blue; color: #FFFF00;}
+	50% {background-color: red; color: #009999;}
+	75% {background-color: yellow; color: #A600A6;}
+	100% {background-color: green; color: #FF9200;}
+}
+@keyframes animEase4 {
+	0% {background-color: yellow; color: #A600A6;}
+	25% {background-color: green; color: #FF9200;}
+	50% {background-color: blue; color: #FFFF00;}
+	75% {background-color: red; color: #009999;}
+	100% {background-color: yellow; color: #A600A6;}
+}
+
+@keyframes animHard1 {
+	0% {background-color: red; color: #009999;}
+	25% {background-color: yellow; color: #A600A6;}
+	50% {background-color: green; color: #FF9200;}
+	75% {background-color: blue; color: #FFFF00;}
+	100% {background-color: red; color: #009999;}
+}
+@keyframes animHard2 {
+	0% {background-color: blue; color: #A600A6;}
+	25% {background-color: red; color: #FF9200;}
+	50% {background-color: yellow; color: #FFFF00;}
+	75% {background-color: green; color: #009999;}
+	100% {background-color: blue; color: #A600A6;}
+}
+@keyframes animHard3 {
+	0% {background-color: green; color: #FF9200;}
+	25% {background-color: blue; color: #FFFF00;}
+	50% {background-color: red; color: #009999;}
+	75% {background-color: yellow; color: #A600A6;}
+	100% {background-color: green; color: #FF9200;}
+}
+@keyframes animHard4 {
+	0% {background-color: yellow; color: #FFFF00;}
+	25% {background-color: green; color: #009999;}
+	50% {background-color: blue; color: #A600A6;}
+	75% {background-color: red; color: #FF9200;}
+	100% {background-color: yellow; color: #FFFF00;}
+}
+
+@keyframes blackWhite1 {
+	0% {background-color: white;}
+	50%{background-color: black;}
+	100%{background-color: white;}
+}
+@keyframes blackWhite2 {
+	0% {background-color: black;}
+	50%{background-color: white;}
+	100%{background-color: black;}
+}
+
+@keyframes tdClick{
+	from {
+		background-color: white;
+		color: black;
+	}
+	to {
+		background-color: black;
+		color: white;
+	}
+}
+
+@keyframes tdBWClick {
+	from {
+		background-color: white;
+		color: black;
+	}
+	to {
+		background-color: #009999;
+		color: #FF9200;
+	}
+}
+
+body {
+	margin: 0px auto;
+	background-color: black;
+	color: white;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+	-ms-user-select: none;
+	font-weight: bold;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+td {
+	vertical-align: middle;
+	box-sizing: border-box;
+	background-color: white; 
+	text-align: center;
+	color: white;
+}
+td:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 5px 5px white inset;
+}
+tr{
+	height: 5%;
+}
+th {
+	font-size: 13px;
+}
+
+main {
+	color: black;
+	position: absolute;
+	text-align: center;
+	right: 150px;
+	left: 150px;
+	height: 430px;
+	top: 80px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 50px;
+}
+p {
+	padding: 0px 5px 0px 5px
+}
+button {
+	width: 250px;
+	border-radius: 5px;
+	border: 5px double black;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+button:hover {
+	border: 2px solid white;
+	background-color: black;
+	color: white;
+	transform: scale(1.5);
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.main div {
+	width: 45%;
+	height: 85px;
+}
+
+a {
+	cursor: pointer;
+}

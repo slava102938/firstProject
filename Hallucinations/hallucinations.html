@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hallucinations</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/hallucinations.css">
+</head>
+<body>
+	<main><h1>Давай сыграем с тобой в одну &#9672;
+		<a onclick="location.href='hallucinations_2.html'" onmouseover="this.innerHTML='сложную'" onmouseout="this.innerHTML='лёгкую'">лёгкую</a> &#9672; игру...</h1><br>
+		<p>Добро пожаловать, человечешка, в мою игру, развивающию головную и глазную боль... точнее, контцентрацию и внимание. В вашем распоряжении будет <span id="cube">206</span> клеток решивших, что они на дескотеке, и хотевших с вами поиграть. Выбирайте уровень сложности, читайте правила и готовтесь к самому сложному...</p>
+		<div class="main">
+			<div>
+				Уровень сложности:<br><input id="changeLevel" type="range" min="1" max="4" value="1" onchange="level()"><br><span id="level">ПоЧТи оТСуТСТВие СЛоЖНоСТи</span><br>
+				<label><input type="checkbox" onclick="blackWhite()">Чёрно-белая тема (+25% сложности)</label>
+			</div>
+			<div>
+				Размер таблицы:<br><input id="changeTable" type="range" min="1" max="3" value="1" onchange="changeTable()"><br><span id="table">оЧеНЬ МаЛеНЬКая ТаБЛиЦа (-50% сложности)</span>
+			</div>
+		</div>
+		<p id="info" align="center">Супер лёгкий уровень в котором невозможно (почти) проиграть. На поле 30 точек, а секунд - 45. Никакой маскировки и обмана зрения. Только КОНТРАСТ</p><br>
+		<button onclick="start()" onmouseover="this.innerHTML='Начнём, человечешка'" onmouseout="this.innerHTML='Самая страшная кнопка'">Самая страшная кнопка</button><br>
+	</main>
+	<table>
+	</table>
+	<script async="" src="js/hallucinations.js"></script>
+</body>
+</html>
