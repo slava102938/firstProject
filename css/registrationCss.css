@@ -7,8 +7,7 @@ body, input, select, button {
 }
 body {
 	background-image: url("../image/index.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	transition: background-image 1s linear;
 }
 #form {
